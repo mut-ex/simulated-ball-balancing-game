@@ -1,14 +1,12 @@
 # Simulated-Ball-Balancing-Game
 
->> Outline  -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-
 The included device driver interfaces a MPU-6050 IMU module and a 8x8 LED Display (that is controlled using a MAX7219 IC) in order to implement a ball balance game.
 
 At the start of each level, the level number is flashed on the display. After that the centre 4 LEDs are flashed to indicate the 'goal'. Then, the 'ball' is placed on a random location on the display.
 
 The user is supposed to tilt the MPU-6050 in order to 'roll' the ball to the goal. If the ball stays there for 3 seconds, the level is won and the players moves on to the next level.
 
->> Wiring -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+# Wiring
 The wiring of the MPU-6050 module is as follows:
 
 WARNING: Ensure that the IOREF jumper is on the 3.3V position.
@@ -27,7 +25,7 @@ DIN -- IO11 on the Galileo board
 CS -- IO10 on the Galileo board
 CLK -- IO13 on the Galileo board
 
->> Usage -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+# Usage
 - Cross-compile the module and the user-space test program for the Galileo board using the accompanying Makefile. Transfer the files to the Galileo board.
 
 - Install the imu module by typing and entering: insmod imu.ko
